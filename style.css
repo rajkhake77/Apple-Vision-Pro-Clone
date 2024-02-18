@@ -1,0 +1,812 @@
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: SF PRO DISPLAY;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  #main{
+      position: relative;
+      overflow: hidden;
+  }
+  #page{
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      background-color: #000;
+  
+  }
+  #page>nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 20px;
+      height: 7vh;
+      width: 50vw;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+  }
+  #page>nav>button{
+      padding: 7px 20px;
+      border-radius: 50px;
+      border: none;
+      background-color: #fff;
+  }
+  #page>nav>h3{
+      font-weight: 400;
+  }
+  #page>video{
+      height: 100%;
+      width: 50%;
+      object-fit: cover;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      
+  }
+
+#page-bottom{
+    height: 20%;
+    width: 25%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page-bottom>h3{
+    margin-bottom: 1vw;
+    color: #ffffffe6;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+#page1>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ 
+}
+#page1>h1{
+    font-size: 4vw;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translatex(-50%);
+    white-space: nowrap;
+}
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page2>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2>h1{
+    font-size: 4vw;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+#page3>img{
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5vw;
+}
+#page3-upper{
+    height: 30%;
+    width: 35%;
+    background-color: white;
+    position: absolute;
+    z-index: 9;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#page3-upper>img{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+#page3-upper-inner{
+    position: absolute;
+    background-color: white;
+    height: 60%;
+    width: 100%;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 30px;
+    gap: 50px;
+    color: #ff823d;
+}
+#page3-upper-inner>h3{
+    font-weight: 800;
+}
+#page3>button{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 15px 35px;
+    background-color: white;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+#page3>button:hover{
+    background-color: #ff823d;
+    border: none;color: white;
+}
+#page3>button>i{
+    padding-right: 15px;
+}
+#page4{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page4>video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#center-page4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2.1vw;
+}
+#page5{
+    display: flex;
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    padding: 0 9vw;
+}
+
+#left5{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+#left5>h1{
+    font-size: 2.3vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    padding-top: 1.8vw;
+}
+#right5{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding-left: 5vw;
+}
+#right5>h3{
+    font-size: 2vw;
+    width: 90%;
+    color: #545454c9;
+    font-size: 1.4vw;
+    opacity: .8;
+}
+#right5>button{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255 90 0);
+    color: #fff;
+    font-weight: 400;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+    font-weight: 500;
+}
+#right5>button:hover{
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #ff823d;
+}
+#page6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+#page6>h3{
+    margin-bottom: 1vw;
+    font-size: 2vw;
+}
+#page6>h1{
+    margin-bottom: 1.5vw;
+    font-size: 5vw;
+}
+#page6>p{
+    font-size: 1.5vw;
+    width: 60%;
+    font-weight: 600;
+    color: #545454c9;
+    opacity: 0.8;
+    padding: 0 3vw;
+}
+
+#page7{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page7>video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#center-page7{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2.1vw;
+}
+#page14{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+#left14{
+    position: relative;
+    height: 95%;
+    width: 47%;
+    background-image: url(https://www.apple.com/v/apple-vision-pro/c/images/overview/design/glass_top__k3b8lzqd1l2m_medium.jpg);
+    background-size: cover;
+    background-color: rebeccapurple;
+}
+#right14{
+    position: relative;
+    height: 95%;
+    width: 47%;
+    background-size: cover;
+    background-image: url(https://www.apple.com/v/apple-vision-pro/c/images/overview/design/glass_side__gm4agomrwl2e_medium.jpg);
+    background-color: red;
+}
+#page15{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#center-page15{
+    position: relative;
+    overflow: hidden;
+    height: 90%;
+    width: 97%;
+}
+#center-page15>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page16{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150vh;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+}
+#page16>h2{
+    position: absolute;
+    width: 50%;
+    color: #545454c9 ;
+    
+    font-weight: 600;
+    top: 5%;
+    padding: 0 20px;
+}
+#page16>h2>span{
+    color: #000;
+}
+#page16>img{
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+}
+#page16>button{
+    position: absolute;
+    bottom: 10%;
+    padding: 15px 35px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.2vw;
+    font-weight: 500;
+    background-color: rgb(255 90 0);
+    color: white;
+}
+
+#page19{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #939090c9;
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    background-color: #000;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5vw;
+}
+#page19>h1{
+    color: white;
+    font-size: 2.5vw;
+    }
+
+#page19>h5{
+    width: 35%;
+    padding-top: 40px;
+}
+#page19>h5>span{
+    color:white;
+}
+#page20{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page20>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#center-page20{
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    bottom: 35%;
+    right: 5%;
+    color: #fff;
+    margin-right: 60px;
+}
+#center-page20>h1{
+    margin-bottom: 1.7vw;
+}
+#page21{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page21>#troff{
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+    z-index: 9;
+}
+#page21>#tron{
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+}
+#page21>#para{
+   color: #939090c9;
+   width: 40%;
+   position: absolute;
+    top: 80%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding-top: 80px;
+}
+#page21>#para>h1{
+    color: #fff;
+}
+#page21>#para>h3{
+    font-size: 1.4vw;
+}
+#page21>#para>h3>span{
+    color:#fff;
+}
+#page21>#para>h3{
+    padding-top: 20px;
+    text-align: center;
+}
+#page22{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page22>#sensorsoff{
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 60%;
+    z-index: 9;
+}
+#page22>#sensorson{
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 60%;
+}
+
+#page22>#para2{
+
+    color: #939090c9;
+    width: 40%;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+ }
+ #page22>#para2>h1{
+    color: #fff;
+}
+#page22>#para2>h3{
+    font-size: 1.4vw;
+}
+#page22>#para2>h3>span{
+    color:#fff;
+}
+#page22>#para2>h3{
+    padding-top: 20px;
+    text-align: center;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+    line-height: 1.5;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style:none ;
+}
+.footer{
+background-color: #000;
+padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #939090c9;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4 ::before{
+    content:'' ;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:  #939090c9;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease ;
+    text-decoration: none;
+}
+.footer-col ul li a:hover{
+    color: #fff;
+    padding: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #939090c9;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease ;
+}
+.footer-col .social-links a:hover{
+color: #000;
+background-color: #fff;
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    } 
+}
+@media(max-width: 600px){
+    #page>video{
+        width: 100%;
+        margin-top: 10px;
+    }
+    #page>nav{
+        width: 100%;
+    }
+    #page1>h1{
+        font-size: 20px;
+    }
+    #page2>h1{
+        font-size: 22px;
+    }
+   #page3{
+    height: 700px;
+   }
+    #page3-upper>img{
+        height: 50px;
+        width: 200px;
+    }
+    #page3-upper-inner{
+    font-size: 13px;
+    white-space: nowrap;
+    }
+    #page3>img{
+        height: 200px;
+        width: 350px;
+    }
+    #page3>button{
+    padding: 12px;
+    font-size: 15px;
+    margin-bottom: 50px;
+    }
+    #center-page4{
+        width: 100%;
+    }
+    #center-page4>h4{
+    font-size: 20px;
+    }
+    #center-page4>h1{
+    font-size: 25px;
+    }
+    
+    #page5{
+        height: 250px;
+    }
+    #left5{
+        width: 100%;
+    }
+    #left5>h1{
+        margin-top: 19px;
+        font-size: 20px;
+    }
+    #right5{
+        width: 100%;
+    }
+    #right5>h3{
+        font-size: 8px;
+       
+    }
+    #right5>button{
+        margin-top: 15px;
+    }
+    #center-page7{
+        width: 100%;
+    }
+    #center-page7>h4{
+        font-size: 20px;
+    }
+    #center-page7>h1{
+        font-size: 25px;
+    }
+    #page6{
+        height: 300px;
+    }
+    #page6>h3{
+        font-size: 25px;
+    }
+    #page6>h1{
+        font-size: 30px;
+    }
+    #page6>p{
+        font-size: 11px;
+        padding-top: 10px;
+    }
+    #page14{
+        display: flex;
+        flex-direction: column;
+    }
+    #left14{
+        width: 90%;
+        margin-bottom: 40px;
+        height: 50%;
+    }
+    #right14{
+        width: 90%;
+        height: 50%;
+    }
+    #center-page15{
+        width: 90%;
+        height: 50%;
+        bottom: 20%;
+    }
+    #page16{
+        height: 650px;
+        margin-top: -25rem;
+        /* width: 100%; */
+    }
+    #page16 h2{
+        width: 100%;
+        font-size: 22px;
+    }
+    #page16 img{
+        bottom: 18%;
+    }
+    #page16 button{
+        margin-top: 50%;
+        font-size: 13px;
+    }
+    #page19{
+        height: 270px;
+    }
+    #page19 h1{
+        font-size: 20px;
+    }
+    #page19 h5{
+        font-size: 15px;
+        width: 100%;
+        padding: 20px;
+    }
+    #page20{
+        height: 500px;
+    }
+   
+    #center-page20{
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #page20 h1{
+        font-size:21px;
+        margin-left: 150px;
+    }
+    #page20 p{
+        font-size: 11px;
+        padding-left: 150px;
+      
+    }
+    #page20 video{
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #page21 #troff{
+        height: 200px;
+        width: 350px;
+    }
+    #page21 #tron{
+        height: 200px;
+        width: 350px;
+    }
+    #page21 #para{
+        width: 100%;
+        text-align: center;
+        top: 60%;
+    }
+    #page21 #para h1{
+        padding: 0 10px;
+     }
+    #page21 #para h3{
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+     #page22 #sensorsoff {
+         height: 200px;
+         width: 400px;
+         
+        }
+     #page22 #sensorson{
+         height: 200px;
+         width: 400px;
+        
+     }
+     #page22 #para2{
+         width: 100%;
+         text-align: center;
+         top: 65%;
+         padding: 20px 0px 20px;
+     }
+     #page22 #para2 h1{
+        padding: 0 5px;
+     }
+     #page22 #para2 h3{
+         font-size: 18px;
+         padding: 15px 20px;
+     }
+    
+    .footer-col{
+        width: 100%;
+    }
+   
+}
